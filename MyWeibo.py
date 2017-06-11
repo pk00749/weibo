@@ -17,7 +17,7 @@ def press_sina_weibo():
     r = client.request_access_token(raw_input("input code:").strip())  
     client.set_access_token(r.access_token, r.expires_in)  
       
-    print client.post.statuses__update(status=u'Sorry to you, this is just a testing. Please ignore me. - from My client for weibo')  
+    print client.post.statuses__update(status=u'Sorry to you, this is just a testing. Please ignore me.')
       
 if __name__ == '__main__':  
     press_sina_weibo()  
